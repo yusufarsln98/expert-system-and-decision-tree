@@ -1,0 +1,28 @@
+|--- petalLength <= 2.45
+|   |--- class: Iris-setosa
+|--- petalLength >  2.45
+|   |--- petalLength <= 4.75
+|   |   |--- petalWidth <= 1.65
+|   |   |   |--- class: Iris-versicolor
+|   |   |--- petalWidth >  1.65
+|   |   |   |--- class: Iris-virginica
+|   |--- petalLength >  4.75
+|   |   |--- petalWidth <= 1.75
+|   |   |   |--- petalLength <= 4.95
+|   |   |   |   |--- class: Iris-versicolor
+|   |   |   |--- petalLength >  4.95
+|   |   |   |   |--- petalWidth <= 1.55
+|   |   |   |   |   |--- class: Iris-virginica
+|   |   |   |   |--- petalWidth >  1.55
+|   |   |   |   |   |--- sepalLength <= 6.95
+|   |   |   |   |   |   |--- class: Iris-versicolor
+|   |   |   |   |   |--- sepalLength >  6.95
+|   |   |   |   |   |   |--- class: Iris-virginica
+|   |   |--- petalWidth >  1.75
+|   |   |   |--- petalLength <= 4.85
+|   |   |   |   |--- sepalWidth <= 3.10
+|   |   |   |   |   |--- class: Iris-virginica
+|   |   |   |   |--- sepalWidth >  3.10
+|   |   |   |   |   |--- class: Iris-versicolor
+|   |   |   |--- petalLength >  4.85
+|   |   |   |   |--- class: Iris-virginica
